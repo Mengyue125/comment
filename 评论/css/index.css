@@ -1,0 +1,68 @@
+/* 导入一个字体 */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+:root {
+  --background-color: #6FBFD9;
+  --border-color: #7591AD;
+  --text-color: #34495e;
+  --color1: #EC3E27;
+  --color2: #fd79a8;
+  --color3: #0984e3;
+  --color4: #00b894;
+  --color5: #fdcb6e;
+  --color6: #e056fd;
+  --color7: #F97F51;
+  --color8: #BDC581;
+  --text: #FEDC0C;
+  --bg: #6FBFD9;
+  --easing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  /* 通过径向渐变形成两个圆点 */
+  background-image:
+    radial-gradient(rgba(0, 0, 0, .1) 20%, transparent 25%), radial-gradient(rgba(0, 0, 0, .1) 20%, transparent 25%);
+  /* 分别控制两个圆点的位置 */
+  background-position: 0 0, 20px 20px;
+  /* 背景的大小 */
+  background-size: 40px 40px;
+}
+
+.comment{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.comment span{
+	width: 300px;
+	display: inline-block;
+	background: rgba(87,152,220,1.00);
+	color: white;
+	border-radius: 10px;
+	padding: 15px 20px;
+	position: absolute;
+	transform: translateX(-100%);
+	transition: 1s;
+	left: 0;
+	font-size: 32px;
+}
+
+@keyframes dh{
+	0%{
+		left: 0;
+	}
+	
+	100%{
+		left: 200%;
+	}
+}
