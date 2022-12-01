@@ -68,7 +68,7 @@ $(function(){
 		$("body").css("background","black");
 	})
 	
-	var arr = ['你是真傻逼','滚滚滚！','真该死啊你',"早点死","快点滚"]
+	var arr = ['生日快乐啊','接下来的生活要开开心心！','有傻瓜今天出生了啊哈哈哈哈哈哈哈哈',"生日快乐，但快乐不止今天！","是某个傻逼的17岁生日"]
 	
 	setInterval(function(){
 		let pageWidth = $(window).width();
